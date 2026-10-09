@@ -22,3 +22,5 @@ run produced identical SHA-256 hashes; `tests/goldens/manifest.json` records the
 `upstream/` contains verbatim pinned source and its hash manifest. It is excluded
 from the published crate, but retained in Git for independent inspection. The
 MIT notice and human credits are retained in the distribution.
+
+The temporary official executable and archive were removed after reproducibility verification, freeing 524,305,103 bytes (500.0 MiB). Regeneration requires obtaining that verified release again.

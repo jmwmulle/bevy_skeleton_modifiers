@@ -4,14 +4,18 @@ version = "0.1.0"
 edition = "2024"
 rust-version = "1.95"
 license = "MIT"
-description = "Skeleton modifiers translated from Godot"
+description = "Godot-derived spring bones and IK for Bevy transform hierarchies"
+repository = "https://github.com/jmwmulle/bevy_skeleton_modifiers"
+documentation = "https://docs.rs/bevy_skeleton_modifiers"
+keywords = ["bevy", "animation", "inverse-kinematics", "skeleton", "spring"]
+categories = ["game-development", "mathematics"]
 readme = "README.md"
 exclude = ["tools/goldens/upstream/**"]
 
 [features]
 default = ["bevy"]
-gizmos = ["bevy", "dep:bevy_gizmos"]
-bevy = ["dep:bevy_app", "dep:bevy_ecs", "dep:bevy_math", "dep:bevy_transform", "dep:bevy_time", "dep:bevy_reflect"]
+gizmos = ["bevy", "dep:bevy_gizmos", "dep:bevy_color"]
+bevy = ["dep:bevy_app", "dep:bevy_ecs", "dep:bevy_math", "dep:bevy_transform", "dep:bevy_time", "dep:bevy_reflect", "dep:bevy_log"]
 
 [dependencies]
 glam = { version = "=0.32.0" }
@@ -23,11 +27,37 @@ bevy_time = { version = "=0.19.1", default-features = false, features = ["std"],
 bevy_reflect = { version = "=0.19.1", default-features = false, features = ["std", "glam"], optional = true }
 bevy_gizmos = { version = "=0.19.1", default-features = false, optional = true }
 
+bevy_log = { version = "=0.19.1", default-features = false, optional = true }
+
+bevy_color = { version = "=0.19.1", default-features = false, optional = true }
+
 [dev-dependencies]
 serde_json = "1"
+bevy = { version = "=0.19.1", default-features = false, features = ["std", "bevy_gizmos", "bevy_gizmos_render", "bevy_log", "bevy_sprite_render", "bevy_pbr", "bevy_core_pipeline", "bevy_render", "bevy_winit", "png", "x11", "tonemapping_luts", "zstd_rust"] }
+flate2 = { version = "1", default-features = false, features = ["rust_backend"] }
 
 [lints.clippy]
 # Upstream signatures and constants remain recognizable.
 too_many_arguments = "allow"
 excessive_precision = "allow"
 approx_constant = "allow"
+
+
+[[example]]
+name = "spring_tail"
+required-features = ["bevy"]
+
+[[example]]
+name = "reaching_arm"
+required-features = ["bevy"]
+
+[[example]]
+name = "chain_solvers"
+required-features = ["bevy"]
+
+[[example]]
+name = "spline_tentacle"
+required-features = ["bevy"]
+
+[package.metadata.docs.rs]
+all-features = true

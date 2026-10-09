@@ -27,3 +27,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
 ```
+
+## Human contributor credit
+
+Godot's pinned AUTHORS.md is reproduced verbatim as AUTHORS.upstream.md. Relevant file histories credit Silc Lizard (Tokage) Renew, Thaddeus Crews, Rémi Verschelde, LuoZhihao, Lyuma, kobewi, Lukas Tenbrink and Michael Alexsander. The pinned file-history evidence is preserved in Git under tools/goldens/upstream/file-authors.json. Porting role credits do not replace these original human credits or notices.

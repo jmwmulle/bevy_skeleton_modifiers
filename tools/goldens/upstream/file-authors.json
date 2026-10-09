@@ -1,0 +1,45 @@
+{
+  "commit": "ed1daf0bf001b61586d9930840f2f1394092c079",
+  "file_history_authors": {
+    "scene/3d/skeleton_modifier_3d.cpp": [
+      "LuoZhihao",
+      "Lyuma",
+      "Silc Lizard (Tokage) Renew",
+      "Thaddeus Crews",
+      "kobewi"
+    ],
+    "scene/3d/spring_bone_simulator_3d.cpp": [
+      "Lukas Tenbrink",
+      "LuoZhihao",
+      "Michael Alexsander",
+      "R\u00e9mi Verschelde",
+      "Silc Lizard (Tokage) Renew",
+      "Thaddeus Crews",
+      "kobewi"
+    ],
+    "scene/3d/two_bone_ik_3d.cpp": [
+      "Silc Lizard (Tokage) Renew",
+      "Thaddeus Crews"
+    ],
+    "scene/3d/iterate_ik_3d.cpp": [
+      "R\u00e9mi Verschelde",
+      "Silc Lizard (Tokage) Renew",
+      "Thaddeus Crews",
+      "kobewi"
+    ],
+    "scene/3d/fabr_ik_3d.cpp": [
+      "Silc Lizard (Tokage) Renew"
+    ],
+    "scene/3d/ccd_ik_3d.cpp": [
+      "Silc Lizard (Tokage) Renew"
+    ],
+    "scene/3d/jacobian_ik_3d.cpp": [
+      "Silc Lizard (Tokage) Renew"
+    ],
+    "scene/3d/spline_ik_3d.cpp": [
+      "R\u00e9mi Verschelde",
+      "Silc Lizard (Tokage) Renew",
+      "Thaddeus Crews"
+    ]
+  }
+}
