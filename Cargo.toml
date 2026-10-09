@@ -1,0 +1,33 @@
+[package]
+name = "bevy_skeleton_modifiers"
+version = "0.1.0"
+edition = "2024"
+rust-version = "1.95"
+license = "MIT"
+description = "Skeleton modifiers translated from Godot"
+readme = "README.md"
+exclude = ["tools/goldens/upstream/**"]
+
+[features]
+default = ["bevy"]
+gizmos = ["bevy", "dep:bevy_gizmos"]
+bevy = ["dep:bevy_app", "dep:bevy_ecs", "dep:bevy_math", "dep:bevy_transform", "dep:bevy_time", "dep:bevy_reflect"]
+
+[dependencies]
+glam = { version = "=0.32.0" }
+bevy_app = { version = "=0.19.1", default-features = false, features = ["std", "bevy_reflect"], optional = true }
+bevy_ecs = { version = "=0.19.1", default-features = false, features = ["std", "bevy_reflect"], optional = true }
+bevy_math = { version = "=0.19.1", default-features = false, features = ["std", "bevy_reflect"], optional = true }
+bevy_transform = { version = "=0.19.1", default-features = false, features = ["std", "bevy_reflect"], optional = true }
+bevy_time = { version = "=0.19.1", default-features = false, features = ["std"], optional = true }
+bevy_reflect = { version = "=0.19.1", default-features = false, features = ["std", "glam"], optional = true }
+bevy_gizmos = { version = "=0.19.1", default-features = false, optional = true }
+
+[dev-dependencies]
+serde_json = "1"
+
+[lints.clippy]
+# Upstream signatures and constants remain recognizable.
+too_many_arguments = "allow"
+excessive_precision = "allow"
+approx_constant = "allow"
