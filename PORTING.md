@@ -48,3 +48,7 @@ Additional tests cover quaternion opposite vectors, influence endpoints, invalid
 ## Exclusions
 
 No Godot editor, inspector, binding, compatibility includes, property validation, scene import or skin import is ported. Godot curves are supplied as baked points or baked from Bevy curves. Legacy SkeletonIK3D, LookAt/Aim/CopyTransform/ConvertTransform/BoneConstraint/LimitAngularVelocity/Retarget, modifier target editor helpers, closed splines and other joint-limitation resources are outside this release. No upstream article/documentation prose or illustrations are copied. No issues or messages have been sent upstream.
+
+## 0.1.1 dependency compatibility
+
+Relax the exact glam 0.32.0 requirement to the standard compatible 0.32 patch range. Lockfile verification uses 0.32.1 with Bevy 0.19.1. The upstream glam patch fixes scalar-over-matrix division and adds element reciprocals; neither is used by the port. Core algorithms and reference fixtures remain unchanged. Targeted checks cover dependency unification, public glam/Bevy type interchange and the existing headless adapter behavior.

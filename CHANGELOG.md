@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.1.1
+
+- Allow compatible glam 0.32 patch releases instead of forcing 0.32.0. Verified with glam 0.32.1 and Bevy 0.19.1; no solver or animation algorithm changes.
+
 ## 0.1.0
 
 - Port Godot 4.7.2 spring bones, analytic colliders, two-bone IK, FABRIK, CCD, Jacobian, cone limits and open-path spline IK.

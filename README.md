@@ -51,6 +51,10 @@ All examples build their meshes and rigs in code and require no downloaded asset
 
 Escape closes each example. Multisample anti-aliasing is disabled for reliable captures on the tested macOS/Metal host.
 
+## Dependency compatibility
+
+The glam requirement accepts compatible 0.32 patch releases; it no longer forces 0.32.0. Version 0.1.1 is checked with glam 0.32.1 (including serde) and Bevy 0.19.1. Bevy remains on 0.19.1; this release does not migrate to Bevy 0.20. Dependency-boundary checks verify shared vector/quaternion types, adapter scheduling and pause behavior. The upstream animation math is unchanged; glam 0.32.1 changes scalar-over-matrix division, which this port does not use, so unchanged reference trajectories are not regenerated for this patch.
+
 ## Verification
 
 Tests replay all 300 frames of 23 scenarios captured from the native Godot 4.7.2 modifier pipeline, plus shortest-arc quaternion references. Warm-start fixtures are recorded separately for macOS and Linux x86_64 because native upstream motion differs between those platforms; both match the port at the original tolerances. They cover colliders, hinges, virtual ends, limits, warm starts and spline tilt. Tests also check fixed-target stability, degenerate geometry, scale, input/output separation, pauses, ordering and plain Bevy hierarchies. See PORTING.md for numerical tolerances and intentional differences. The reference trajectories were not changed to fit the port.

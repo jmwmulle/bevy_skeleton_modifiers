@@ -1,6 +1,6 @@
 [package]
 name = "bevy_skeleton_modifiers"
-version = "0.1.0"
+version = "0.1.1"
 edition = "2024"
 rust-version = "1.95"
 license = "MIT"
@@ -18,7 +18,7 @@ gizmos = ["bevy", "dep:bevy_gizmos", "dep:bevy_color"]
 bevy = ["dep:bevy_app", "dep:bevy_ecs", "dep:bevy_math", "dep:bevy_transform", "dep:bevy_time", "dep:bevy_reflect", "dep:bevy_log"]
 
 [dependencies]
-glam = { version = "=0.32.0" }
+glam = { version = "0.32.0" }
 bevy_app = { version = "=0.19.1", default-features = false, features = ["std", "bevy_reflect"], optional = true }
 bevy_ecs = { version = "=0.19.1", default-features = false, features = ["std", "bevy_reflect"], optional = true }
 bevy_math = { version = "=0.19.1", default-features = false, features = ["std", "bevy_reflect", "curve"], optional = true }
