@@ -21,7 +21,7 @@ bevy = ["dep:bevy_app", "dep:bevy_ecs", "dep:bevy_math", "dep:bevy_transform", "
 glam = { version = "=0.32.0" }
 bevy_app = { version = "=0.19.1", default-features = false, features = ["std", "bevy_reflect"], optional = true }
 bevy_ecs = { version = "=0.19.1", default-features = false, features = ["std", "bevy_reflect"], optional = true }
-bevy_math = { version = "=0.19.1", default-features = false, features = ["std", "bevy_reflect"], optional = true }
+bevy_math = { version = "=0.19.1", default-features = false, features = ["std", "bevy_reflect", "curve"], optional = true }
 bevy_transform = { version = "=0.19.1", default-features = false, features = ["std", "bevy_reflect"], optional = true }
 bevy_time = { version = "=0.19.1", default-features = false, features = ["std"], optional = true }
 bevy_reflect = { version = "=0.19.1", default-features = false, features = ["std", "glam"], optional = true }

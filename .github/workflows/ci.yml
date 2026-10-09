@@ -16,6 +16,7 @@ jobs:
       - run: cargo test --all-features
       - run: cargo test --no-default-features
       - run: cargo doc --no-deps --all-features
+      - run: cargo package --locked
   msrv:
     runs-on: ubuntu-latest
     steps:
