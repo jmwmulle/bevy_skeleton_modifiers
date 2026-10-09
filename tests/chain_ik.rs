@@ -53,11 +53,7 @@ fn fabrik_ccd_jacobian_match_godot() {
                     f,
                     &name,
                     i,
-                    if matches!(name.as_str(), "ccd_limits" | "ccd_warm") {
-                        1e-2
-                    } else {
-                        1e-3
-                    },
+                    if name == "ccd_limits" { 1e-2 } else { 1e-3 },
                 );
                 worst.0 = worst.0.max(error.0);
                 worst.1 = worst.1.max(error.1);

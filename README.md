@@ -1,5 +1,7 @@
 # bevy_skeleton_modifiers
 
+**Unreleased:** implementation and macOS mechanical checks pass, but Linux CCD warm-start reference replay exceeds the required tolerance. Publication is held pending that fix; see PORTING.md.
+
 Spring-bone chains, two-bone IK, FABRIK, CCD, Jacobian IK and open-path spline IK, translated from Godot's MIT-licensed skeleton modifiers. The math core uses borrowed poses and glam. The default Bevy adapter works with any `ChildOf`/`Transform` hierarchy, including rigid parts without a skin.
 
 ## Bevy use

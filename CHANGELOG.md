@@ -1,6 +1,6 @@
 # Changelog
 
-## 0.1.0
+## Unreleased (planned 0.1.0)
 
 - Port Godot 4.7.2 spring bones, analytic colliders, two-bone IK, FABRIK, CCD, Jacobian, cone limits and open-path spline IK.
 - Add a Bevy 0.19 adapter for plain transform hierarchies, ordered influence, an injectable spring clock and optional debug gizmos.
