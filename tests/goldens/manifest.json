@@ -1,0 +1,29 @@
+{
+  "godot_commit": "ed1daf0bf001b61586d9930840f2f1394092c079",
+  "frames_per_scenario": 300,
+  "sha256": {
+    "spring_center_bone.json.gz": "fe468a8cafe38cafeb7d0ba153736cb60c7e63c71b0e7240ddc5cc1568be0a54",
+    "spring_capsule.json.gz": "bb2d615ad8b70df518b314f9589be14ac65a4fab119f10ac822305ab440a5f28",
+    "spring_plane.json.gz": "b9b6d6ab883ebbf077e50d1e0b22542765d67cc1193b5c4b8ec0c95706764ed8",
+    "spring_gravity.json.gz": "bc68158497799cd8242d2772060d81c18907b512db8784cb05958750ef52cf6c",
+    "two_virtual.json.gz": "9d7ff5bf88acd679db249423ee40e8bb4d139dac97791d375f0408a953156817",
+    "jacobian_free.json.gz": "e938ff335e495b2b4685a3559e52ed1938046f1eb5b77bf73d1854a1dbf6dbdf",
+    "spring_sphere.json.gz": "fc6d9aab75e856816f510c920ea6573b9cec63d7c94cc9ed63a16a59463d4288",
+    "fabrik_free.json.gz": "1dea2e179e6d2c7493a75342f5a2ef2cb1782ee63657b87a2e0a69b95e11cab5",
+    "ccd_warm.json.gz": "2733425027ce7ce29dcd57e7528a8676d1d8ca07915c4e1dbea0e2fa7e5de540",
+    "ccd_limits.json.gz": "50794d3500a758e50f1fd7f11986fdb66a651aa387abdd16a82f957b70844f44",
+    "spring_stiff.json.gz": "83e51603bca51758c32df6cc1f960e0dbf33ee3cc17a36ce84552dc46245c070",
+    "spline_plain.json.gz": "bb06c700e0e96c9ff660fb984439cf4cc837bc3a7198e162e98bcbf076367145",
+    "ccd_free.json.gz": "73fc30e9f2a4e08eb6d855e39d2212c169223e30e3f21e49a77f880f9a05bc13",
+    "jacobian_warm.json.gz": "8743f06b52920cf33c0919e1800e8e141e020e50c24c00f53cea95cbf5947d14",
+    "fabrik_warm.json.gz": "fe3c6ead5be7503a178e9e9b426658de90954bd1bceee045d9cc948479b1449c",
+    "spline_tilt.json.gz": "619f1c0e55958a14f3e7bbaf8e53056f5308b97af821b6d2ef3bffd37e5cbc43",
+    "spring_hinge.json.gz": "7b6e70ac35c94c911e6e0e525140feca37eece69ad1e804ad6309d7261e4cd46",
+    "fabrik_limits.json.gz": "0932413466b37fc53952ea75ced289852141984f80e86238b5ce993a15aae902",
+    "two_sweep.json.gz": "0a024c28e2d906002013535360ab6ec5234d456b609e539b8ad94ed5d74ebe50",
+    "spring_external.json.gz": "7b8e20b865c921d30af6068fec63c80b8be30784ae7ac4de5ccea71925a334b2",
+    "jacobian_limits.json.gz": "daa56f6473b29f2dcb51d85f56b99baacb5cae3cc58040f3e60ab4af2ed39f23",
+    "spring_loose.json.gz": "5b3384392e2c9811172301e008a037e1c40adeafeda303eb454f5a902deb5b06",
+    "spring_inside_sphere.json.gz": "498764037c59268d6990a745699d5fb12c04592914015cb7ac78d0550ef76206"
+  }
+}
