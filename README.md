@@ -1,7 +1,5 @@
 # bevy_skeleton_modifiers
 
-**Unreleased:** implementation and macOS mechanical checks pass, but Linux CCD warm-start reference replay exceeds the required tolerance. Publication is held pending that fix; see PORTING.md.
-
 Spring-bone chains, two-bone IK, FABRIK, CCD, Jacobian IK and open-path spline IK, translated from Godot's MIT-licensed skeleton modifiers. The math core uses borrowed poses and glam. The default Bevy adapter works with any `ChildOf`/`Transform` hierarchy, including rigid parts without a skin.
 
 ## Bevy use
@@ -55,7 +53,7 @@ Escape closes each example. Multisample anti-aliasing is disabled for reliable c
 
 ## Verification
 
-Tests replay all 300 frames of 23 scenarios captured from the native Godot 4.7.2 modifier pipeline, plus shortest-arc quaternion references. They cover colliders, hinges, virtual ends, limits, warm starts and spline tilt. Tests also check fixed-target stability, degenerate geometry, scale, input/output separation, pauses, ordering and plain Bevy hierarchies. See PORTING.md for numerical tolerances and intentional differences. The reference trajectories were not changed to fit the port.
+Tests replay all 300 frames of 23 scenarios captured from the native Godot 4.7.2 modifier pipeline, plus shortest-arc quaternion references. Warm-start fixtures are recorded separately for macOS and Linux x86_64 because native upstream motion differs between those platforms; both match the port at the original tolerances. They cover colliders, hinges, virtual ends, limits, warm starts and spline tilt. Tests also check fixed-target stability, degenerate geometry, scale, input/output separation, pauses, ordering and plain Bevy hierarchies. See PORTING.md for numerical tolerances and intentional differences. The reference trajectories were not changed to fit the port.
 
 Rust 1.98.1 is used locally; CI checks Linux and the declared Rust 1.95 minimum. Numerical comparisons verify the recorded scenarios, not every possible rig or visual result.
 

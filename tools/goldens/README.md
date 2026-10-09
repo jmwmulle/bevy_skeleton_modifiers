@@ -24,3 +24,9 @@ from the published crate, but retained in Git for independent inspection. The
 MIT notice and human credits are retained in the distribution.
 
 The temporary official executable and archive were removed after reproducibility verification, freeing 524,305,103 bytes (500.0 MiB). Regeneration requires obtaining that verified release again.
+
+## Native Linux warm starts
+
+The official Linux x86_64 Godot 4.7.2 archive is verified with SHA-512
+`9aa00f7a605200940bce3027a567b782f49bd8e940dd06ae9e987bd65aee1b1467edd56ed84fcdcbdd44354bf613bdbb4e5d2913e925850368e150c59ed54c65`.
+The native-reference workflow runs the unchanged FABRIK, CCD and Jacobian warm-start scenarios against this binary and compares every frame with the Rust core at the original tolerances. Its generated files are committed separately under tests/goldens/linux-x86_64 with a provenance/hash manifest, while the macOS fixtures remain unchanged. The workflow also verifies regenerated hashes against that manifest. The CI runner's disposable binary is not included in Git or the crate.

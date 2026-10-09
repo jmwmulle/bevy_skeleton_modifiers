@@ -17,8 +17,14 @@ pub fn pose(v: &Value) -> BonePose {
     }
 }
 pub fn golden(name: &str) -> Value {
-    let folder = std::env::var("SKELETON_GOLDENS")
-        .unwrap_or_else(|_| format!("{}/tests/goldens", env!("CARGO_MANIFEST_DIR")));
+    let folder = std::env::var("SKELETON_GOLDENS").unwrap_or_else(|_| {
+        let base = format!("{}/tests/goldens", env!("CARGO_MANIFEST_DIR"));
+        if cfg!(all(target_os = "linux", target_arch = "x86_64")) && name.ends_with("_warm") {
+            format!("{base}/linux-x86_64")
+        } else {
+            base
+        }
+    });
     let raw = std::fs::read(format!("{folder}/{name}.json.gz")).unwrap();
     let mut decoded = String::new();
     flate2::read::GzDecoder::new(&raw[..])

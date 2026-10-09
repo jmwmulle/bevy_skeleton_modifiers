@@ -10,7 +10,7 @@ documentation = "https://docs.rs/bevy_skeleton_modifiers"
 keywords = ["bevy", "animation", "inverse-kinematics", "skeleton", "spring"]
 categories = ["game-development", "mathematics"]
 readme = "README.md"
-exclude = ["tools/goldens/upstream/**"]
+exclude = ["tools/goldens/upstream/**", "tools/linux-reference/**"]
 
 [features]
 default = ["bevy"]

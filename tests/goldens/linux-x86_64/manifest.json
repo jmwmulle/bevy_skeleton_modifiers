@@ -1,0 +1,12 @@
+{
+  "godot_commit": "ed1daf0bf001b61586d9930840f2f1394092c079",
+  "platform": "Linux x86_64",
+  "frames_per_scenario": 300,
+  "official_archive_sha512": "9aa00f7a605200940bce3027a567b782f49bd8e940dd06ae9e987bd65aee1b1467edd56ed84fcdcbdd44354bf613bdbb4e5d2913e925850368e150c59ed54c65",
+  "generation_run": "https://github.com/jmwmulle/bevy_skeleton_modifiers/actions/runs/37947499322",
+  "sha256": {
+    "fabrik_warm.json.gz": "5e9535720fa77529132cff3f1fc91b549736b863f4dd7d21b8e8d2a0ae248afd",
+    "ccd_warm.json.gz": "40cb10892f9bf04f81e9a0073870b6b2b63c3a7ac7f6e3a557a1b54687d18432",
+    "jacobian_warm.json.gz": "ef5edf6fb1acf3bff7ba277482883e078ca646bec1f313072181a1d5be281774"
+  }
+}

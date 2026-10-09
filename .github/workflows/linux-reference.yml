@@ -26,6 +26,9 @@ jobs:
           for f in p.glob('*.json'):
               assert len(json.loads(f.read_bytes())['frames']) == 300
               f.with_suffix('.json.gz').write_bytes(gzip.compress(f.read_bytes(),mtime=0))
+          expected=json.loads(pathlib.Path('tests/goldens/linux-x86_64/manifest.json').read_text())['sha256']
+          for name, sha in expected.items():
+              assert hashlib.sha256((p/name).read_bytes()).hexdigest() == sha, name
           manifest={f.name:hashlib.sha256(f.read_bytes()).hexdigest() for f in p.glob('*.json.gz')}
           (p/'manifest.json').write_text(json.dumps(manifest,indent=2))
           PY
