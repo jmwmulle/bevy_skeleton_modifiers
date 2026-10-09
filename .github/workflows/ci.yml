@@ -13,7 +13,7 @@ jobs:
           components: rustfmt, clippy
       - run: cargo fmt --check
       - run: cargo clippy --all-targets --all-features -- -D warnings
-      - run: cargo test --all-features
+      - run: cargo test --all-features -- --nocapture
       - run: cargo test --no-default-features
       - run: cargo doc --no-deps --all-features
       - run: cargo package --locked
