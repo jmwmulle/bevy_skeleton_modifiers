@@ -1,0 +1,18 @@
+[package]
+name = "bevy_skeleton_modifiers"
+version = "0.1.0"
+edition = "2024"
+publish = false
+[lib]
+path = "../../src/lib.rs"
+[features]
+bevy = []
+gizmos = []
+[dependencies]
+glam = "=0.32.0"
+[dev-dependencies]
+serde_json = "1"
+flate2 = { version = "1", default-features = false, features = ["rust_backend"] }
+[[test]]
+name = "chain_ik"
+path = "../../tests/chain_ik.rs"
